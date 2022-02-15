@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", arial, sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --w-1: #ede;
+}
+body {
+  background: linear-gradient(var(--w-1), #ded);
+  width: 100%;
+}
+
+.main-login {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 90vh;
+  top: 10vh;
+}
+.comp-logo-title {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.comp-logo-title img {
+  width: 320px;
+  height: 240px;
+  filter: brightness(0);
+  right: 15px;
+  position: relative;
+}
+.comp-logo-title .logo-name {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-family: "Nova Round", cursive;
+}
+.loginbox {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px 15px;
+  border: 2px solid;
+  box-shadow: 5px 5px 5px #aaa;
+  border-radius: 30px;
+}
+.loginbox h1 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 1.7em;
+  color: #3ca5a8;
+}
+.loginbox form {
+  padding: 10px;
+  margin-top: 5px;
+}
+label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-align: left;
+  color: #159;
+}
+input {
+  width: 100%;
+}
+.loginbox input[type="text"],
+[type="password"],
+[type="email"] {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #aaa;
+  margin-bottom: 10px;
+  height: 35px;
+  outline: none;
+}
+.loginbox input[type="text"],
+[type="password"]::placeholder {
+  color: #000000;
+}
+.loginbox input::placeholder {
+  color: #888;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+input[type="submit"] {
+  font-size: 18px;
+  text-transform: uppercase;
+  outline: none;
+  letter-spacing: 3px;
+  color: #747;
+  padding: 8px 0;
+  width: 200px;
+  border: 2px solid #159;
+  border-radius: 60px;
+  background: transparent;
+  transition: all 0.6s ease-out;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #159;
+  color: rgb(236, 231, 231);
+}
+.login-btn {
+  justify-content: center;
+  display: flex;
+  margin: 9px 0px;
+}
+.loginbox .login-a a {
+  display: block;
+  text-align: center;
+  margin: 2px;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: 'Poppins',Arial, sans-serif;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  /* day-color */
+  --nav-dark-color: #262b30;
+  --nav_color: #c6c9be;
+  --logo_color: #52ace0;
+  --logo_main_content: #4c0a83;
+  --login-red: #f45;
+  --login-yellow: #06ad2a;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: var(--nav_color);
+  position: fixed;
+  z-index: 1000;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-name {
+  margin-left: 10px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  color: var(--logo_main_content);
+}
+.logo-name a {
+  font-size: 20px;
+}
+.logo-name a:hover {
+  color: var(--logo_main_content);
+}
+img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  outline: none;
+  border-radius: 50%;
+}
+.main-header-content ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  right: 0px;
+}
+ul > li {
+  list-style: none;
+  padding: 9px 7px 9px 20px;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--logo_main_content);
+  font-size: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+a:hover {
+  color: var(--login-red);
+  transition: 0.3s;
+}
+.fa {
+  color: #52ace0;
+  align-items: center;
+  position: relative;
+  bottom: 2px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+}
+.profile a {
+  margin: 8px;
+  color: var(--login-red);
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 15px;
+  transition: all 0.4s;
+}
+.profile a:hover {
+  color: var(--login-yellow);
+}
+
+.front-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.home-banner-div-1 {
+  background-color: #062d61e6;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  width: 35%;
+  padding: 70px 15px;
+}
+.main-content h2 {
+  font-size: 2em;
+  color: #52ace0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.main-content p,
+.main-content pre {
+  font-size: 17px;
+  letter-spacing: 3px;
+  color: white;
+}
+/* .main-content {
+} */
+.home-banner-div-2 {
+  background: url(../PICS/home-banner_3.jpg);
+  background-size: cover;
+  opacity: 0.9;
+  background-position: right;
+  height: 80vh;
+  width: 65%;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+  color: var(--login-yellow);
+}
+.heading h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.course .content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.course .content .courseBox {
+  padding: 20px 10px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.course .content .courseBox a{
+  color: white;
+  text-decoration: none;
+}
+.course .content .courseBox:hover {
+  background: var(--login-red);
+}
+.course .content .courseBox img {
+  display: inline;
+  width: 150px;
+  height: 150px;
+  filter: invert(1);
+  border-radius: 10%;
+}
+.course .content .courseBox h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
